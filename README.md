@@ -63,14 +63,14 @@ npm start
 npm test
 ```
 ## Assumptions
--GPS coordinates are sufficiently accurate for zone detection
--Events are processed in received order
--Zones are non-overlapping for clear transition detection
--Designed to scale to hundreds of vehicles
+**-** GPS coordinates are sufficiently accurate for zone detection
+**-** Events are processed in received order
+**-** Zones are non-overlapping for clear transition detection
+**-** Designed to scale to hundreds of vehicles
 
 # Future Improvements
--Persistent storage with Redis/PostgreSQL
--Spatial indexing for faster zone lookups
--Docker containerization
--Advanced zone types (circles, rectangles)
--Webhook notifications for zone transitions
+**-** Persistent storage with Redis/PostgreSQL
+**-** Spatial indexing for faster zone lookups
+**-** Docker containerization
+**-** Advanced zone types (circles, rectangles)
+**-** Webhook notifications for zone transitions
