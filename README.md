@@ -2,10 +2,15 @@
 A real-time geofence tracking system for taxi vehicles that detects when they enter or exit geographic zones based on GPS coordinates.
 ## Features
 -**Real-time GPS Processing** - Instant location event processing
+
 -**Zone Boundary Detection** - Accurate enter/exit detection using ray-casting algorithm
+
 -**Vehicle Status Tracking** - Current zone and location history
+
 -**RESTful API** - Clean, predictable endpoints
+
 -**Production Ready** - Security, logging, error handling, and monitoring
+
 
 ## Folder Structure
 ```bash
@@ -39,11 +44,17 @@ taxi-geofence-service/
 ```
 ## API Endpoints
 - **POST /events/location** - Submit vehicle location events
+  
 -**GET /vehicles/:id/status** - Get current vehicle status
+
 -**GET /vehicles/:id/transitions** - Get zone transition history
+
 -**GET /zones** - List all geofence zones
+
 -**POST /zones** - Create new geofence zone
+
 -**GET /health** - Service health check
+
 ##  Setup & Local Development
 ### 1️⃣ Clone the repository
 ```bash
@@ -64,13 +75,21 @@ npm test
 ```
 ## Assumptions
 **-** GPS coordinates are sufficiently accurate for zone detection
+
 **-** Events are processed in received order
+
 **-** Zones are non-overlapping for clear transition detection
+
 **-** Designed to scale to hundreds of vehicles
 
 # Future Improvements
 **-** Persistent storage with Redis/PostgreSQL
+
 **-** Spatial indexing for faster zone lookups
+
 **-** Docker containerization
+
 **-** Advanced zone types (circles, rectangles)
+
 **-** Webhook notifications for zone transitions
+
